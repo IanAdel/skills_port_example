@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>A frost cracking example code &#8212; Example for Skill Portfolio</title>
+    <title>Example course exercise &#8212; Example for Skill Portfolio</title>
   
   
   
@@ -63,8 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Frost';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Example of skills portfolio:" href="skills_portfolio.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="intro.html" />
+    <link rel="prev" title="Example of skills portfolio" href="skills_portfolio.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -164,13 +163,13 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    <no title>
+                    Short Bio
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">A frost cracking example code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skills_portfolio.html">Example of skills portfolio:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skills_portfolio.html">Example of skills portfolio</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example course exercise</a></li>
 </ul>
 
     </div>
@@ -335,7 +334,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -346,11 +347,19 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>A frost cracking example code</h1>
+    <h1>Example course exercise</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-frost-cracking-example">A frost cracking example</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -360,8 +369,13 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="a-frost-cracking-example-code">
-<h1>A frost cracking example code<a class="headerlink" href="#a-frost-cracking-example-code" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="example-course-exercise">
+<h1>Example course exercise<a class="headerlink" href="#example-course-exercise" title="Link to this heading">#</a></h1>
+<p>On a mid-level bachelors’ course, we plan to implement an exercise or project using Jupyter Notebooks.
+The students could integrate these books into a website like this, to share with others.</p>
+<p><img alt="drawing" src="_images/DCG.png" /></p>
+<section id="a-frost-cracking-example">
+<h2>A frost cracking example<a class="headerlink" href="#a-frost-cracking-example" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -388,8 +402,8 @@ To do this we need to set some parameters about the rock and the climate.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">###########################</span>
 <span class="c1">### physical parameters ###</span>
 <span class="c1">###########################</span>
-<span class="n">α</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="n">MAT</span> <span class="o">=</span> <span class="mf">0.</span>  <span class="c1"># Mean Annual Air Temperature</span>
+<span class="n">α</span> <span class="o">=</span> <span class="mf">0.001</span> <span class="c1"># Diffusion constant</span>
+<span class="n">MAT</span> <span class="o">=</span> <span class="mf">0.</span>  <span class="c1"># Mean annual air temperature</span>
 <span class="n">Tₐ</span> <span class="o">=</span> <span class="mi">12</span>   <span class="c1"># half of the annual temperature variation</span>
 <span class="n">py</span> <span class="o">=</span> <span class="mi">365</span>  <span class="c1"># 365 days per year</span>
 </pre></div>
@@ -419,7 +433,7 @@ To do this we need to set some parameters about the rock and the climate.</p>
 </div>
 </div>
 </div>
-<p>Now, let make a plot of it.</p>
+<p>Now, let make a plot of it. We will include an shaded area where frost cracking is known to occur.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="s2">&quot;temperature plot&quot;</span><span class="p">)</span>
@@ -443,7 +457,7 @@ To do this we need to set some parameters about the rock and the climate.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7d82142557d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7e2d9167b990&gt;
 </pre></div>
 </div>
 <img alt="_images/1f3baea378d26dbb44e18efe48936a390a6a602c2302f966cd5a8d77e05d4d8e.png" src="_images/1f3baea378d26dbb44e18efe48936a390a6a602c2302f966cd5a8d77e05d4d8e.png" />
@@ -452,8 +466,7 @@ To do this we need to set some parameters about the rock and the climate.</p>
 <p>Now you can play with some of the parameters. What happens when the temperature is 2 degress colder? or the annual temperature variation is half of the original value</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="n">MAT</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>  <span class="c1"># Mean Annual Air Temperature</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MAT</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>  <span class="c1"># Mean Annual Air Temperature</span>
 <span class="n">Tₐ</span> <span class="o">=</span> <span class="mi">12</span>   <span class="c1"># half of the annual temperature variation</span>
 <span class="n">Tₐ</span> <span class="o">=</span> <span class="mi">12</span><span class="o">/</span><span class="mi">2</span>   <span class="c1"># half of the annual temperature variation</span>
 
@@ -479,58 +492,13 @@ To do this we need to set some parameters about the rock and the climate.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7d820feae090&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7e2d91458590&gt;
 </pre></div>
 </div>
-<img alt="_images/6302d4064b01c0e1a25662a1c5e310d2926f9de62c4662d1ca66e4ab19263b9a.png" src="_images/6302d4064b01c0e1a25662a1c5e310d2926f9de62c4662d1ca66e4ab19263b9a.png" />
+<img alt="_images/5c61d1c2f76c92b593261e2911be8a3fa66944d7220c692d4161f7f53905683c.png" src="_images/5c61d1c2f76c92b593261e2911be8a3fa66944d7220c692d4161f7f53905683c.png" />
 </div>
 </div>
-<p>Next we want to define how much frost cracking could occur over a year.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">frost_efficiency</span><span class="p">(</span><span class="n">depths</span><span class="p">):</span>
-  <span class="n">frost_crack_pot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">365</span><span class="p">)</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">365</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">depth</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">depths</span><span class="p">):</span>
-        <span class="n">temp</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span><span class="n">depths</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">crack_rng</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">temp</span> <span class="o">&lt;</span> <span class="n">crack_rng</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
-            <span class="n">frost_crack_pot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="p">(</span><span class="n">depths</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">depths</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-
-    <span class="k">return</span> <span class="n">frost_crack_pot</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="n">MAT</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="c1"># Mean Annual Air Temperature</span>
-<span class="n">Tₐ</span> <span class="o">=</span> <span class="mi">8</span>   <span class="c1"># half of the annual temperature variation</span>
-
-<span class="n">frost_crack_pot</span> <span class="o">=</span><span class="n">frost_efficiency</span><span class="p">(</span><span class="n">depths</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="s2">&quot;seasonal potential&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
-
-<span class="c1"># Plot frost cracking potential</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">all_days</span><span class="p">,</span> <span class="n">frost_crack_pot</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Day of Year&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frost cracking potential</span><span class="se">\n</span><span class="s2"> (m^-1)&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mf">0.8</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">frost_crack_pot</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;Total Frost Cracking Potential: </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">frost_crack_pot</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># Plot air temperature on a secondary y-axis</span>
-<span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">all_days</span><span class="p">,</span> <span class="n">T</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">all_days</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Air Temperature (°C)&quot;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/3a9b5132ace80810516a71735801e8a343b9de0edf4f175f029b2912ee0a2c05.png" src="_images/3a9b5132ace80810516a71735801e8a343b9de0edf4f175f029b2912ee0a2c05.png" />
-</div>
-</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -564,22 +532,13 @@ To do this we need to set some parameters about the rock and the climate.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="skills_portfolio.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Example of skills portfolio</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="skills_portfolio.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Example of skills portfolio:</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -587,6 +546,22 @@ To do this we need to set some parameters about the rock and the climate.</p>
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-frost-cracking-example">A frost cracking example</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
